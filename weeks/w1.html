@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 1: AI Landscape | AI Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html"><div class="logo-icon">AI</div>AI Lab</a>
+  <div class="navbar-links">
+    <a href="../index.html">Dashboard</a>
+    <a href="../resources.html">All Resources</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="week-detail-header">
+    <div class="week-detail-meta">
+      <span class="week-badge">Week 1</span>
+      <span style="color:var(--text-muted);font-size:13px;">Oct 3 &mdash; Oct 9, 2026</span>
+    </div>
+    <div class="week-detail-title">AI, GenAI &amp; Agentic AI Landscape</div>
+    <div class="week-detail-desc">Understand the full arc of AI evolution from rule-based systems to agentic AI. Learn where Generative AI and Agentic AI fit in the broader landscape, and how each era differs architecturally. Also covers foundational Ethical AI principles.</div>
+    <div class="week-detail-progress" style="margin-top:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:13px;color:var(--text-muted);">Progress: <span id="week-checked">0</span> / <span id="week-total">7</span></span>
+        <span style="font-weight:700;color:var(--accent);font-family:var(--font-mono);" id="week-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="week-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+
+  <div class="objectives-card">
+    <h3>Learning Objectives</h3>
+    <ul>
+      <li>Map the 5 eras of AI evolution and explain each transition</li>
+      <li>Distinguish between Classical ML, Deep Learning, Generative AI, and Agentic systems</li>
+      <li>Identify which architecture fits a given business problem</li>
+      <li>Understand how bias enters AI systems and why responsible AI matters</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Videos</div>
+  <div class="resource-list">
+
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w1-v1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">A Beginner's Guide to AI (4-part playlist)</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; Google Cloud Tech &mdash; <a href="https://www.youtube.com/watch?v=l7WuPBxPPLk" target="_blank">Watch Playlist</a> &mdash; ~30 min total</div>
+        <div class="resource-note">Covers AI vs ML vs Deep Learning in plain language with real-world analogies. Great first watch.</div>
+      </div>
+    </div>
+
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w1-v2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Neural Networks: Zero to Hero (Intro lecture)</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; Andrej Karpathy &mdash; <a href="https://www.youtube.com/watch?v=VMj-3S1tku0" target="_blank">Watch</a> &mdash; ~2 hrs (watch first 40 min this week)</div>
+        <div class="resource-note">World-class intuition on how neural networks learn. Conceptual understanding only this week, no code needed.</div>
+      </div>
+    </div>
+
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w1-v3">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Generative AI in a Nutshell (15 min)</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; Henrik Kniberg &mdash; <a href="https://www.youtube.com/watch?v=2IK3DFHRFfw" target="_blank">Watch</a> &mdash; 15 min</div>
+        <div class="resource-note">The best single video explaining what generative AI actually is and where it fits. Whiteboard-style, very clear.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-title">Reading &amp; Articles</div>
+  <div class="resource-list">
+
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w1-r1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">A People's Guide to AI</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free PDF &mdash; Mimi Onuoha &amp; Mother Cyborg &mdash; <a href="https://alliedmedia.org/resources/peoples-guide-to-ai" target="_blank">Download Free</a></div>
+        <div class="resource-note">Accessible, jargon-free guide to understanding AI from a human perspective. Chapters 1 to 3 this week (about 20 pages). Covers what AI really is, where data comes from, and how bias enters systems.</div>
+      </div>
+    </div>
+
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w1-r2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">McKinsey State of AI 2024 Report</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free Report &mdash; McKinsey &amp; Company &mdash; <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank">Read Free</a></div>
+        <div class="resource-note">Skim the executive summary and key findings section only (pages 1 to 8). Gives you real-world business context on AI adoption rates and where agentic AI is heading.</div>
+      </div>
+    </div>
+
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w1-r3">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">The Illustrated Machine Learning (Visual Reference)</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free Website &mdash; <a href="https://illustrated-machine-learning.github.io" target="_blank">illustrated-machine-learning.github.io</a></div>
+        <div class="resource-note">Bookmark this. It is the most visual, diagram-heavy ML reference available online. Use it as a companion reference throughout the entire course.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-title">Course Segment</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w1-c1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">AI for Everyone &mdash; Week 1: What is AI?</span>
+          <span class="tag tag-course">Course</span>
+        </div>
+        <div class="resource-meta">Free Audit &mdash; Andrew Ng / Coursera &mdash; <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank">Enroll Free (Audit)</a> &mdash; ~1 hr</div>
+        <div class="resource-note">Audit the first week only (free). Andrew Ng explains AI concepts to non-technical business leaders. Perfect alignment with this week's objectives.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a class="btn btn-ghost" href="prework.html">&larr; Pre-Work</a>
+    <a class="btn btn-primary" href="w2.html">Week 2: LLMs &amp; Prompt Engineering &rarr;</a>
+  </div>
+</div>
+
+<script src="../js/progress.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCheckboxes('w1'));</script>
+</body>
+</html>

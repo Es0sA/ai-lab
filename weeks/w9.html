@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 9: RAG Foundations: Embeddings, Chunking &amp; Vector Stores | AI Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html"><div class="logo-icon">AI</div>AI Lab</a>
+  <div class="navbar-links">
+    <a href="../index.html">Dashboard</a>
+    <a href="../resources.html">All Resources</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="week-detail-header">
+    <div class="week-detail-meta">
+      <span class="week-badge">Week 9</span>
+      <span style="color:var(--text-muted);font-size:13px;">Nov 28 &mdash; Dec 4, 2026</span>
+    </div>
+    <div class="week-detail-title">RAG Foundations: Embeddings, Chunking &amp; Vector Stores</div>
+    <div class="week-detail-desc">Build Retrieval-Augmented Generation (RAG) pipelines that connect LLMs to external knowledge sources for grounded, reliable outputs. Understand embeddings, chunking strategies, and vector databases. Automate outputs with n8n.</div>
+    <div class="week-detail-progress" style="margin-top:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:13px;color:var(--text-muted);">Progress: <span id="week-checked">0</span> / <span id="week-total">8</span></span>
+        <span style="font-weight:700;color:var(--accent);font-family:var(--font-mono);" id="week-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="week-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="objectives-card">
+    <h3>Learning Objectives</h3>
+    <ul>
+      <li>Explain what an embedding is and why it enables semantic search</li>
+      <li>Choose the right chunking strategy for different document types</li>
+      <li>Set up a working RAG pipeline in Flowise with a free vector database</li>
+      <li>Connect the RAG output to n8n to trigger automated actions</li>
+      <li>Understand the difference between keyword search and semantic search</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Courses (Free)</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w9-c1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Building and Evaluating Advanced RAG</span>
+          <span class="tag tag-course">Course</span>
+        </div>
+        <div class="resource-meta">Free &mdash; DeepLearning.AI &mdash; <a href="https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/" target="_blank">Enroll Free</a> &mdash; ~1.5 hrs</div>
+        <div class="resource-note">The best structured introduction to RAG available for free. Covers sentence window retrieval, auto-merging retrieval, and RAG triad evaluation. Complete all lessons this week.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w9-c2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Vector Databases: From Embeddings to Applications</span>
+          <span class="tag tag-course">Course</span>
+        </div>
+        <div class="resource-meta">Free &mdash; DeepLearning.AI &mdash; <a href="https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/" target="_blank">Enroll Free</a> &mdash; ~1 hr</div>
+        <div class="resource-note">Covers how vector databases store and retrieve embeddings. Directly needed to understand the storage layer of your RAG pipeline.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Hands-On Tools</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w9-t1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Flowise: Build Your First RAG Pipeline</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">Free &mdash; <a href="https://flowiseai.com" target="_blank">flowiseai.com</a> &mdash; Tutorial: <a href="https://docs.flowiseai.com/getting-started" target="_blank">Getting Started Guide</a></div>
+        <div class="resource-note">Build a document Q&A chatbot in Flowise: upload a PDF, embed it with a free embedding model, store in a local vector store, and query it with a Groq LLM. No code needed.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w9-t2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Case Study Dataset: Public Company Annual Report (PDF)</span>
+          <span class="tag tag-dataset">Dataset</span>
+        </div>
+        <div class="resource-meta">Free &mdash; SEC EDGAR &mdash; <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&type=10-K&dateb=&owner=include&count=40" target="_blank">Download Any 10-K Report</a></div>
+        <div class="resource-note">This is your Financial Report Analyzer project data source. Download any company's annual 10-K report as a PDF. The RAG pipeline you build here will be the Week 11 project.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Reading &amp; Papers</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w9-r1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">RAG: Retrieval-Augmented Generation (Original Paper)</span>
+          <span class="tag tag-paper">Paper</span>
+        </div>
+        <div class="resource-meta">Free &mdash; arXiv (Facebook AI) &mdash; <a href="https://arxiv.org/abs/2005.11401" target="_blank">Read Abstract &amp; Introduction</a></div>
+        <div class="resource-note">The original 2020 Facebook AI paper that introduced RAG. Read the Abstract, Introduction, and Section 2. Understanding the core idea from the source is valuable context.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w9-r2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Chunking Strategies for LLM Applications</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free Article &mdash; Pinecone &mdash; <a href="https://www.pinecone.io/learn/chunking-strategies/" target="_blank">Read Free</a></div>
+        <div class="resource-note">The definitive practical guide to choosing chunk sizes and overlap strategies. This single decision affects your RAG accuracy more than any other parameter.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w9-r3">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">What Are Embeddings?</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free Article &mdash; Vicki Boykis &mdash; <a href="https://vickiboykis.com/what_are_embeddings/" target="_blank">Read Free</a></div>
+        <div class="resource-note">The clearest long-form explanation of embeddings written for a technical but non-specialist audience. Read Chapters 1 to 3.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-nav">
+    <a class="btn btn-ghost" href="w8.html">&larr; Week 8</a>
+    <a class="btn btn-primary" href="w10.html">Week 10: RAG Evaluation &rarr;</a>
+  </div>
+</div>
+<script src="../js/progress.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCheckboxes('w9'));</script>
+</body>
+</html>

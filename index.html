@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Lab - Learning Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="navbar-brand" href="index.html">
+    <div class="logo-icon">AI</div>
+    AI Lab
+  </a>
+  <div class="navbar-links">
+    <a href="index.html" class="active">Dashboard</a>
+    <a href="resources.html">All Resources</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="page-header">
+    <div class="page-title">My AI Learning Dashboard</div>
+    <div class="page-subtitle">MIT No-Code AI &amp; ML Program &mdash; Oct 2 to Dec 31, 2026 &mdash; Es0sA</div>
+  </div>
+
+  <!-- Global Progress -->
+  <div class="global-progress-card">
+    <div class="progress-header">
+      <span class="progress-label">Overall Program Progress</span>
+      <span class="progress-pct" id="global-pct">0%</span>
+    </div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="global-bar" style="width:0%"></div>
+    </div>
+    <div class="progress-meta">
+      <div class="progress-stat">
+        <div class="val" id="global-checked">0</div>
+        <div class="lbl">Completed</div>
+      </div>
+      <div class="progress-stat">
+        <div class="val" id="global-total">0</div>
+        <div class="lbl">Total Resources</div>
+      </div>
+      <div class="progress-stat">
+        <div class="val">13</div>
+        <div class="lbl">Weeks</div>
+      </div>
+      <div class="progress-stat">
+        <div class="val">Dec 31</div>
+        <div class="lbl">Deadline</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pre-Work -->
+  <div class="phase-divider">
+    <span class="phase-label">Pre-Work</span>
+    <div class="phase-line"></div>
+  </div>
+
+  <div class="week-grid" style="margin-bottom: 8px;">
+    <a class="week-card" href="weeks/prework.html" id="card-prework">
+      <div class="week-card-header">
+        <span class="week-badge">Pre-Work</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">Tool Setup &amp; AI Foundations</div>
+      <div class="week-dates">Oct 2, 2026 (1 Day)</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-prework" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-prework">0/4 resources</div>
+    </a>
+  </div>
+
+  <!-- Phase 1 -->
+  <div class="phase-divider">
+    <span class="phase-label">Phase 1 &mdash; Classical ML Foundations</span>
+    <div class="phase-line"></div>
+  </div>
+
+  <div class="week-grid">
+    <a class="week-card" href="weeks/w1.html" id="card-w1">
+      <div class="week-card-header">
+        <span class="week-badge">Week 1</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">AI, GenAI &amp; Agentic AI Landscape</div>
+      <div class="week-dates">Oct 3 &mdash; Oct 9</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w1" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w1">0/7 resources</div>
+    </a>
+
+    <a class="week-card" href="weeks/w2.html" id="card-w2">
+      <div class="week-card-header">
+        <span class="week-badge">Week 2</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">LLMs &amp; Prompt Engineering</div>
+      <div class="week-dates">Oct 10 &mdash; Oct 16</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w2" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w2">0/8 resources</div>
+    </a>
+
+    <a class="week-card" href="weeks/w3.html" id="card-w3">
+      <div class="week-card-header">
+        <span class="week-badge">Week 3</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">Data Exploration: Clustering, PCA &amp; Time Series</div>
+      <div class="week-dates">Oct 17 &mdash; Oct 23</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w3" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w3">0/8 resources</div>
+    </a>
+
+    <a class="week-card" href="weeks/w4.html" id="card-w4">
+      <div class="week-card-header">
+        <span class="week-badge">Week 4</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">Prediction Methods: Regression</div>
+      <div class="week-dates">Oct 24 &mdash; Oct 30</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w4" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w4">0/7 resources</div>
+    </a>
+
+    <a class="week-card" href="weeks/w5.html" id="card-w5">
+      <div class="week-card-header">
+        <span class="week-badge">Week 5</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">Classification, Explainability &amp; Deep Learning Bridge</div>
+      <div class="week-dates">Oct 31 &mdash; Nov 6</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w5" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w5">0/8 resources</div>
+    </a>
+  </div>
+
+  <!-- Phase 2 -->
+  <div class="phase-divider">
+    <span class="phase-label">Phase 2 &mdash; Generative AI &amp; Advanced Prompting</span>
+    <div class="phase-line"></div>
+  </div>
+
+  <div class="week-grid">
+    <a class="week-card" href="weeks/w6.html" id="card-w6">
+      <div class="week-card-header">
+        <span class="week-badge">Week 6</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">AI Design Thinking + GenAI Mechanics + Ethical AI</div>
+      <div class="week-dates">Nov 7 &mdash; Nov 13</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w6" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w6">0/8 resources</div>
+    </a>
+
+    <a class="week-card" href="weeks/w7.html" id="card-w7">
+      <div class="week-card-header">
+        <span class="week-badge">Week 7</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">Advanced Prompt Engineering &amp; Structured Outputs</div>
+      <div class="week-dates">Nov 14 &mdash; Nov 20</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w7" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w7">0/7 resources</div>
+    </a>
+
+    <a class="week-card" href="weeks/w8.html" id="card-w8">
+      <div class="week-card-header">
+        <span class="week-badge">Week 8</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">Computer Vision, Model Comparison &amp; n8n Automation</div>
+      <div class="week-dates">Nov 21 &mdash; Nov 27</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w8" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w8">0/7 resources</div>
+    </a>
+  </div>
+
+  <!-- Phase 3 -->
+  <div class="phase-divider">
+    <span class="phase-label">Phase 3 &mdash; Retrieval-Augmented Generation (RAG)</span>
+    <div class="phase-line"></div>
+  </div>
+
+  <div class="week-grid">
+    <a class="week-card" href="weeks/w9.html" id="card-w9">
+      <div class="week-card-header">
+        <span class="week-badge">Week 9</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">RAG Foundations: Embeddings, Chunking &amp; Vector Stores</div>
+      <div class="week-dates">Nov 28 &mdash; Dec 4</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w9" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w9">0/8 resources</div>
+    </a>
+
+    <a class="week-card" href="weeks/w10.html" id="card-w10">
+      <div class="week-card-header">
+        <span class="week-badge">Week 10</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">RAG Evaluation, Citation Tracing &amp; Security</div>
+      <div class="week-dates">Dec 5 &mdash; Dec 11</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w10" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w10">0/7 resources</div>
+    </a>
+
+    <a class="week-card" href="weeks/w11.html" id="card-w11">
+      <div class="week-card-header">
+        <span class="week-badge">Week 11</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">Project: Financial Report Analyzer</div>
+      <div class="week-dates">Dec 12 &mdash; Dec 18</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w11" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w11">0/5 resources</div>
+    </a>
+  </div>
+
+  <!-- Phase 4 -->
+  <div class="phase-divider">
+    <span class="phase-label">Phase 4 &mdash; Agentic AI Systems</span>
+    <div class="phase-line"></div>
+  </div>
+
+  <div class="week-grid">
+    <a class="week-card" href="weeks/w12.html" id="card-w12">
+      <div class="week-card-header">
+        <span class="week-badge">Week 12</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">Single &amp; Multi-Agent Systems: Design, Memory &amp; Orchestration</div>
+      <div class="week-dates">Dec 19 &mdash; Dec 25</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w12" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w12">0/8 resources</div>
+    </a>
+
+    <a class="week-card" href="weeks/w13.html" id="card-w13">
+      <div class="week-card-header">
+        <span class="week-badge">Week 13</span>
+        <span class="week-status locked">Not Started</span>
+      </div>
+      <div class="week-title">Project: Agentic Helpdesk + Portfolio Wrap-Up</div>
+      <div class="week-dates">Dec 26 &mdash; Dec 31</div>
+      <div class="week-mini-bar-bg">
+        <div class="week-mini-bar-fill" id="mini-bar-w13" style="width:0%"></div>
+      </div>
+      <div class="week-resource-count" id="mini-pct-w13">0/6 resources</div>
+    </a>
+  </div>
+
+</div><!-- /container -->
+
+<script src="js/progress.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', initDashboard);
+  window.addEventListener('ailab:progress', initDashboard);
+</script>
+</body>
+</html>

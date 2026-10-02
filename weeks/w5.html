@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 5: Classification, Explainability &amp; Deep Learning Bridge | AI Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html"><div class="logo-icon">AI</div>AI Lab</a>
+  <div class="navbar-links">
+    <a href="../index.html">Dashboard</a>
+    <a href="../resources.html">All Resources</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="week-detail-header">
+    <div class="week-detail-meta">
+      <span class="week-badge">Week 5</span>
+      <span style="color:var(--text-muted);font-size:13px;">Oct 31 &mdash; Nov 6, 2026</span>
+    </div>
+    <div class="week-detail-title">Classification, Explainability &amp; Deep Learning Bridge</div>
+    <div class="week-detail-desc">Build and evaluate classification models using Decision Trees, Random Forests, and Gradient Boosting in KNIME. Learn to explain model decisions to non-technical stakeholders. Bridge into Deep Learning by understanding neural network structure conceptually.</div>
+    <div class="week-detail-progress" style="margin-top:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:13px;color:var(--text-muted);">Progress: <span id="week-checked">0</span> / <span id="week-total">8</span></span>
+        <span style="font-weight:700;color:var(--accent);font-family:var(--font-mono);" id="week-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="week-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="objectives-card">
+    <h3>Learning Objectives</h3>
+    <ul>
+      <li>Build a decision tree and read its rules as business logic</li>
+      <li>Explain why Random Forests outperform single trees</li>
+      <li>Interpret a confusion matrix, precision, recall, and F1-score</li>
+      <li>Use SHAP values to explain individual AI predictions</li>
+      <li>Understand neural network layers and activation functions at a conceptual level</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Videos</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w5-v1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Decision Trees Clearly Explained</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; StatQuest &mdash; <a href="https://www.youtube.com/watch?v=7VeUPuFGJHk" target="_blank">Watch</a> &mdash; 18 min</div>
+        <div class="resource-note">Decision trees are the most interpretable ML model. Master this before random forests.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w5-v2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Random Forests: Part 1 &mdash; Building and Using</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; StatQuest &mdash; <a href="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ" target="_blank">Watch</a> &mdash; 10 min</div>
+        <div class="resource-note">Explains how bagging multiple trees reduces overfitting. Directly used in the Hospitality booking cancellation project.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w5-v3">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Gradient Boost (XGBoost) Part 1: Regression</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; StatQuest &mdash; <a href="https://www.youtube.com/watch?v=3CC4N4z3GJc" target="_blank">Watch</a> &mdash; 22 min</div>
+        <div class="resource-note">XGBoost consistently wins Kaggle competitions on tabular data. Understanding it conceptually is important even in a no-code context.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w5-v4">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Confusion Matrix Clearly Explained</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; StatQuest &mdash; <a href="https://www.youtube.com/watch?v=Kdsp6soqA7o" target="_blank">Watch</a> &mdash; 7 min</div>
+        <div class="resource-note">Essential for understanding whether your classifier is actually doing what you think.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w5-v5">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Neural Networks Part 1: Inside the Black Box</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; StatQuest &mdash; <a href="https://www.youtube.com/watch?v=CqOfi41LfDw" target="_blank">Watch</a> &mdash; 20 min</div>
+        <div class="resource-note">This is your Deep Learning bridge. Conceptual intro to layers, weights, and activation functions. Sets you up perfectly for Week 6.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Hands-On Tool (KNIME)</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w5-k1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">KNIME Classification Workflow (Random Forest)</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">KNIME Hub &mdash; <a href="https://hub.knime.com/search?q=random+forest+classification" target="_blank">Browse Workflows</a></div>
+        <div class="resource-note">Download and run the Random Forest classification workflow on KNIME Hub. Switch the dataset to the hotel booking dataset.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w5-k2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Case Study Dataset: Hotel Booking Cancellation</span>
+          <span class="tag tag-dataset">Dataset</span>
+        </div>
+        <div class="resource-meta">Kaggle Free &mdash; <a href="https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand" target="_blank">Download Dataset</a></div>
+        <div class="resource-note">This is the exact Hospitality project from the brochure. Predict which bookings will be cancelled using Random Forest in KNIME.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Reading</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w5-r1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">SHAP Values Explained (Explainable AI)</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free Article &mdash; Towards Data Science &mdash; <a href="https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30" target="_blank">Read Free</a></div>
+        <div class="resource-note">SHAP (SHapley Additive exPlanations) is the standard way to explain any ML model's predictions. This is what regulators and managers ask for.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-nav">
+    <a class="btn btn-ghost" href="w4.html">&larr; Week 4</a>
+    <a class="btn btn-primary" href="w6.html">Week 6: GenAI Mechanics &rarr;</a>
+  </div>
+</div>
+<script src="../js/progress.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCheckboxes('w5'));</script>
+</body>
+</html>

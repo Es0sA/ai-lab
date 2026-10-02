@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Single &amp; Multi-Agent Systems: Design, Memory &amp; Orchestration | AI Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html"><div class="logo-icon">AI</div>AI Lab</a>
+  <div class="navbar-links">
+    <a href="../index.html">Dashboard</a>
+    <a href="../resources.html">All Resources</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="week-detail-header">
+    <div class="week-detail-meta">
+      <span class="week-badge">Week 12</span>
+      <span style="color:var(--text-muted);font-size:13px;">Dec 19 &mdash; Dec 25, 2026</span>
+    </div>
+    <div class="week-detail-title">Single &amp; Multi-Agent Systems: Design, Memory &amp; Orchestration</div>
+    <div class="week-detail-desc">Design and deploy AI agents that can plan, remember, use tools, and complete multi-step business tasks autonomously. Extend to multi-agent systems where agents collaborate, hand off tasks, and handle real-world complexity.</div>
+    <div class="week-detail-progress" style="margin-top:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:13px;color:var(--text-muted);">Progress: <span id="week-checked">0</span> / <span id="week-total">8</span></span>
+        <span style="font-weight:700;color:var(--accent);font-family:var(--font-mono);" id="week-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="week-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="objectives-card">
+    <h3>Learning Objectives</h3>
+    <ul>
+      <li>Explain the agent loop: perceive, think, act, observe</li>
+      <li>Configure memory, tools, and planning in a single Flowise agent</li>
+      <li>Design a multi-agent system with a supervisor and worker agents</li>
+      <li>Implement tool accuracy evaluation for agent outputs</li>
+      <li>Apply guardrails to prevent agents from taking harmful or incorrect actions</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Courses (Free)</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w12-c1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">AI Agents in LangGraph</span>
+          <span class="tag tag-course">Course</span>
+        </div>
+        <div class="resource-meta">Free &mdash; DeepLearning.AI &mdash; <a href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank">Enroll Free</a> &mdash; ~2 hrs</div>
+        <div class="resource-note">The best free course on building single and multi-agent systems. Covers state machines, memory, tool use, and human-in-the-loop. Complete all lessons.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w12-c2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Building Agentic RAG with LlamaIndex</span>
+          <span class="tag tag-course">Course</span>
+        </div>
+        <div class="resource-meta">Free &mdash; DeepLearning.AI &mdash; <a href="https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/" target="_blank">Enroll Free</a> &mdash; ~1 hr</div>
+        <div class="resource-note">Extends RAG into an agentic system that can decide which knowledge source to query. Directly relevant to the Week 13 Helpdesk project.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Reading &amp; Papers</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w12-r1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">ReAct: Synergizing Reasoning and Acting in LLMs</span>
+          <span class="tag tag-paper">Paper</span>
+        </div>
+        <div class="resource-meta">Free &mdash; arXiv &mdash; <a href="https://arxiv.org/abs/2210.03629" target="_blank">Read Abstract &amp; Section 2</a></div>
+        <div class="resource-note">ReAct is the foundational algorithm behind most LLM agents. Read the Abstract and Section 2. The examples in the paper are the clearest illustrations of how an agent thinks step by step.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w12-r2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Practices for Governing Agentic AI Systems</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free &mdash; OpenAI &mdash; <a href="https://openai.com/research/practices-for-governing-agentic-ai-systems" target="_blank">Read Free</a></div>
+        <div class="resource-note">OpenAI's framework for safe agentic AI deployment. Essential reading on guardrails, human-in-the-loop requirements, and when NOT to give an agent full autonomy.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w12-r3">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">LLM Powered Autonomous Agents (Blog Post)</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free &mdash; Lilian Weng / OpenAI &mdash; <a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank">Read Free</a></div>
+        <div class="resource-note">The most comprehensive overview of LLM agent architectures. Covers planning, memory types (sensory, short-term, long-term), and tool use. Bookmark and reference throughout.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Hands-On Tools</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w12-t1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Build a Single Agent in Flowise</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">Flowise Agent Docs &mdash; <a href="https://docs.flowiseai.com/using-flowise/agentflows" target="_blank">Agent Flow Docs</a></div>
+        <div class="resource-note">Build a single agent with: (1) a tool for searching the web, (2) a tool for reading a document, and (3) memory to remember conversation context. Test it with a multi-step research task.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w12-t2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Build a Multi-Agent Supervisor System in Flowise</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">Flowise Multi-Agent Docs &mdash; <a href="https://docs.flowiseai.com" target="_blank">docs.flowiseai.com</a></div>
+        <div class="resource-note">Extend your single agent into a supervisor + 2 worker agents. The supervisor routes tasks; one worker searches knowledge, another drafts responses. This is the scaffold for the Week 13 project.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-nav">
+    <a class="btn btn-ghost" href="w11.html">&larr; Week 11</a>
+    <a class="btn btn-primary" href="w13.html">Week 13: Final Project &rarr;</a>
+  </div>
+</div>
+<script src="../js/progress.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCheckboxes('w12'));</script>
+</body>
+</html>

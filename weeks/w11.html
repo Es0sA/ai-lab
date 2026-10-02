@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 11: Project: Financial Report Analyzer | AI Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html"><div class="logo-icon">AI</div>AI Lab</a>
+  <div class="navbar-links">
+    <a href="../index.html">Dashboard</a>
+    <a href="../resources.html">All Resources</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="week-detail-header">
+    <div class="week-detail-meta">
+      <span class="week-badge">Week 11</span>
+      <span style="color:var(--text-muted);font-size:13px;">Dec 12 &mdash; Dec 18, 2026</span>
+    </div>
+    <div class="week-detail-title">Project: Financial Report Analyzer</div>
+    <div class="week-detail-desc">Build the Financial Report Analyzer capstone project. A complete RAG pipeline that extracts key information from lengthy annual reports to improve decision-making efficiency. This project combines Weeks 9 and 10 into a single deployable system.</div>
+    <div class="week-detail-progress" style="margin-top:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:13px;color:var(--text-muted);">Progress: <span id="week-checked">0</span> / <span id="week-total">5</span></span>
+        <span style="font-weight:700;color:var(--accent);font-family:var(--font-mono);" id="week-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="week-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="objectives-card">
+    <h3>Learning Objectives</h3>
+    <ul>
+      <li>Load and chunk a real company annual report PDF into a vector store</li>
+      <li>Query the document with natural language business questions</li>
+      <li>Validate answers with citation tracing back to source pages</li>
+      <li>Detect and handle hallucinated answers using consistency checks</li>
+      <li>Document the project: problem, approach, results, and limitations</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Project Resources</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w11-p1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">SEC EDGAR: Download Annual Report (10-K)</span>
+          <span class="tag tag-dataset">Dataset</span>
+        </div>
+        <div class="resource-meta">Free &mdash; <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&type=10-K&dateb=&owner=include&count=40" target="_blank">Browse Reports</a></div>
+        <div class="resource-note">Choose any well-known company (Apple, Tesla, Microsoft). Download their most recent 10-K annual report as a PDF. This is your RAG document.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w11-p2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Flowise: Complete RAG Pipeline Setup</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta"><a href="https://flowiseai.com" target="_blank">flowiseai.com</a> &mdash; <a href="https://docs.flowiseai.com" target="_blank">Documentation</a></div>
+        <div class="resource-note">Build the full pipeline: PDF loader → text splitter → embedding model (free) → vector store → LLM (Groq free) → chat interface with citations.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w11-p3">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Project Test Questions (Business Analyst Perspective)</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Create your own 15 test questions</div>
+        <div class="resource-note">Write 15 questions a financial analyst would ask: revenue growth, key risks, segment performance, management outlook, capital allocation. Test every one and document accuracy.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Documentation Template</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w11-d1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Project Write-Up Template</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Use Notion (free) or Google Docs &mdash; <a href="https://notion.so" target="_blank">notion.so</a></div>
+        <div class="resource-note">Document: (1) Problem Statement, (2) System Architecture diagram, (3) Tools used, (4) Evaluation results table, (5) Key findings, (6) What failed and why, (7) What you would improve. This becomes a portfolio piece.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w11-d2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Draw Your System Architecture</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">Free Diagram Tool &mdash; <a href="https://excalidraw.com" target="_blank">excalidraw.com</a></div>
+        <div class="resource-note">Draw a simple architecture diagram showing how the system works: PDF → Chunks → Embeddings → Vector DB → Query → LLM → Answer + Citation. This visual goes in your portfolio.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-nav">
+    <a class="btn btn-ghost" href="w10.html">&larr; Week 10</a>
+    <a class="btn btn-primary" href="w12.html">Week 12: Agentic AI &rarr;</a>
+  </div>
+</div>
+<script src="../js/progress.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCheckboxes('w11'));</script>
+</body>
+</html>

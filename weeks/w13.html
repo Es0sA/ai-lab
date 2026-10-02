@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 13: Project: Agentic Helpdesk + Portfolio Wrap-Up | AI Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html"><div class="logo-icon">AI</div>AI Lab</a>
+  <div class="navbar-links">
+    <a href="../index.html">Dashboard</a>
+    <a href="../resources.html">All Resources</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="week-detail-header">
+    <div class="week-detail-meta">
+      <span class="week-badge">Week 13</span>
+      <span style="color:var(--text-muted);font-size:13px;">Dec 26 &mdash; Dec 31, 2026</span>
+    </div>
+    <div class="week-detail-title">Project: Agentic Helpdesk + Portfolio Wrap-Up</div>
+    <div class="week-detail-desc">Build the Agentic Customer Support Helpdesk capstone: a multi-agent system that classifies tickets, retrieves knowledge, generates policy-compliant responses, and handles escalation. Then wrap up your portfolio with all three projects documented.</div>
+    <div class="week-detail-progress" style="margin-top:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:13px;color:var(--text-muted);">Progress: <span id="week-checked">0</span> / <span id="week-total">6</span></span>
+        <span style="font-weight:700;color:var(--accent);font-family:var(--font-mono);" id="week-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="week-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="objectives-card">
+    <h3>Learning Objectives</h3>
+    <ul>
+      <li>Deploy a working multi-agent agentic helpdesk system in Flowise</li>
+      <li>Implement ticket classification, RAG knowledge retrieval, and escalation routing</li>
+      <li>Evaluate agent output quality with tool accuracy metrics</li>
+      <li>Write up all three projects as business-readable case studies</li>
+      <li>Publish your portfolio to GitHub Pages or Notion</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Project Resources</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w13-p1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Flowise Multi-Agent Helpdesk Setup</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">Flowise Docs &mdash; <a href="https://docs.flowiseai.com/using-flowise/agentflows" target="_blank">Agent Flow Guide</a></div>
+        <div class="resource-note">Build the 3-agent system: (1) Classifier Agent: categorizes incoming support tickets, (2) Knowledge Agent: searches a RAG knowledge base for relevant policies, (3) Responder Agent: drafts final response or escalates.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w13-p2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Sample Customer Support Dataset</span>
+          <span class="tag tag-dataset">Dataset</span>
+        </div>
+        <div class="resource-meta">Free &mdash; Kaggle &mdash; <a href="https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter" target="_blank">Download Dataset</a></div>
+        <div class="resource-note">Customer support conversations to test your agent system against real ticket scenarios.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w13-p3">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">n8n: Automate Ticket Ingestion</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">n8n Desktop App &mdash; <a href="https://docs.n8n.io" target="_blank">n8n Docs</a></div>
+        <div class="resource-note">Set up an n8n workflow that monitors a Gmail inbox (or webhook) for new support requests, sends them to your Flowise agent, and logs the response. This makes the whole system end-to-end.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Portfolio Wrap-Up (Bonus C)</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w13-b1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Portfolio Template: Project Case Study Format</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Use Notion Free or Google Docs &mdash; <a href="https://notion.so" target="_blank">notion.so</a></div>
+        <div class="resource-note">For each of the 3 projects write: (1) Problem Statement (1 sentence), (2) Business Impact (what decision does this enable?), (3) Architecture (your Excalidraw diagram), (4) Tools Used, (5) Results, (6) Limitations. Frame everything in business value, not technical jargon.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w13-b2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Host Portfolio on GitHub Pages or Notion</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">GitHub Pages: <a href="https://pages.github.com" target="_blank">pages.github.com</a> &mdash; or Notion Public Page: free</div>
+        <div class="resource-note">Publish your three project write-ups publicly so you can share the URL. A public portfolio link is your proof of work for any employer, client, or collaborator.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w13-b3">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">LinkedIn: Update Your Skills Section</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta"><a href="https://linkedin.com" target="_blank">linkedin.com</a></div>
+        <div class="resource-note">Add these skills: Machine Learning, Prompt Engineering, Retrieval-Augmented Generation, AI Agents, KNIME, n8n, Flowise. Add a post announcing your completion of the program with your portfolio link.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-nav">
+    <a class="btn btn-ghost" href="w12.html">&larr; Week 12</a>
+    <a class="btn btn-primary" href="../index.html">Back to Dashboard &rarr;</a>
+  </div>
+</div>
+<script src="../js/progress.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCheckboxes('w13'));</script>
+</body>
+</html>

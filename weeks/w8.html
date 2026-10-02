@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 8: Computer Vision, Model Comparison &amp; n8n Automation | AI Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html"><div class="logo-icon">AI</div>AI Lab</a>
+  <div class="navbar-links">
+    <a href="../index.html">Dashboard</a>
+    <a href="../resources.html">All Resources</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="week-detail-header">
+    <div class="week-detail-meta">
+      <span class="week-badge">Week 8</span>
+      <span style="color:var(--text-muted);font-size:13px;">Nov 21 &mdash; Nov 27, 2026</span>
+    </div>
+    <div class="week-detail-title">Computer Vision, Model Comparison &amp; n8n Automation</div>
+    <div class="week-detail-desc">Explore how AI interprets visual data using convolutional neural networks. Train a no-code image classifier with Google Teachable Machine. Introduction to n8n for automating AI workflow outputs.</div>
+    <div class="week-detail-progress" style="margin-top:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:13px;color:var(--text-muted);">Progress: <span id="week-checked">0</span> / <span id="week-total">7</span></span>
+        <span style="font-weight:700;color:var(--accent);font-family:var(--font-mono);" id="week-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="week-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="objectives-card">
+    <h3>Learning Objectives</h3>
+    <ul>
+      <li>Train a working image classifier with zero code using Teachable Machine</li>
+      <li>Explain what a CNN does differently from a regular neural network</li>
+      <li>Trigger an automated workflow in n8n based on AI output</li>
+      <li>Connect n8n to a free LLM API and log outputs to a Google Sheet</li>
+      <li>Understand when to use vision AI vs text AI for a given problem</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Videos</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w8-v1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Convolutional Neural Networks (CNNs) Visually Explained</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; 3Blue1Brown &mdash; <a href="https://www.youtube.com/watch?v=KuXjwB4LzSA" target="_blank">Watch</a> &mdash; 24 min</div>
+        <div class="resource-note">The clearest explanation of how CNNs detect patterns in images. Understand this before trying Teachable Machine.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w8-v2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">n8n Crash Course for Beginners</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; n8n &mdash; <a href="https://www.youtube.com/watch?v=1MwSoB0gnM4" target="_blank">Watch</a> &mdash; 30 min</div>
+        <div class="resource-note">Official n8n walkthrough. By end of this video you will have built your first automated workflow. Use n8n Desktop App on Windows.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Hands-On Tools</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w8-t1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Google Teachable Machine (No-Code Image Classifier)</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">Free Browser Tool &mdash; <a href="https://teachablemachine.withgoogle.com/" target="_blank">Open Teachable Machine</a></div>
+        <div class="resource-note">Train a working image classifier directly in your browser with no code. Upload sample photos from your phone, train it, and test it. Takes about 20 minutes to get a working model.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w8-t2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">n8n: Build Your First LLM Automation Workflow</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">n8n Desktop App &mdash; Tutorial: <a href="https://docs.n8n.io/try-it-out/quickstart/" target="_blank">Quickstart Guide</a></div>
+        <div class="resource-note">Build a workflow that: (1) accepts a text input, (2) sends it to Groq (free LLM), and (3) saves the output to a Google Sheet. This is your first real AI automation.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Reading</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w8-r1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">How Google Lens Works (Practical Computer Vision Overview)</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free Article &mdash; Google AI Blog &mdash; <a href="https://ai.googleblog.com/2017/02/on-device-machine-intelligence.html" target="_blank">Read Free</a></div>
+        <div class="resource-note">Practical context for where computer vision is deployed today. Connects the CNN theory to real applications.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w8-r2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">The Roboflow Computer Vision Tutorial</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free Guide &mdash; Roboflow &mdash; <a href="https://roboflow.com/learn" target="_blank">Browse Tutorials</a></div>
+        <div class="resource-note">Roboflow is a free no-code computer vision platform. Browse the tutorials to understand object detection use cases beyond image classification.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-nav">
+    <a class="btn btn-ghost" href="w7.html">&larr; Week 7</a>
+    <a class="btn btn-primary" href="w9.html">Week 9: RAG Foundations &rarr;</a>
+  </div>
+</div>
+<script src="../js/progress.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCheckboxes('w8'));</script>
+</body>
+</html>

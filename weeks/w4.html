@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 4: Prediction Methods: Regression | AI Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html"><div class="logo-icon">AI</div>AI Lab</a>
+  <div class="navbar-links">
+    <a href="../index.html">Dashboard</a>
+    <a href="../resources.html">All Resources</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="week-detail-header">
+    <div class="week-detail-meta">
+      <span class="week-badge">Week 4</span>
+      <span style="color:var(--text-muted);font-size:13px;">Oct 24 &mdash; Oct 30, 2026</span>
+    </div>
+    <div class="week-detail-title">Prediction Methods: Regression</div>
+    <div class="week-detail-desc">Build and evaluate regression models to predict numerical outcomes and identify key drivers of a target variable. Learn how to validate assumptions, interpret outputs, and run full regression workflows in KNIME.</div>
+    <div class="week-detail-progress" style="margin-top:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:13px;color:var(--text-muted);">Progress: <span id="week-checked">0</span> / <span id="week-total">7</span></span>
+        <span style="font-weight:700;color:var(--accent);font-family:var(--font-mono);" id="week-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="week-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="objectives-card">
+    <h3>Learning Objectives</h3>
+    <ul>
+      <li>Explain the difference between simple and multiple linear regression</li>
+      <li>Interpret regression coefficients as business insights</li>
+      <li>Identify and handle violations of linear regression assumptions</li>
+      <li>Build a complete regression workflow in KNIME including evaluation</li>
+      <li>Apply performance metrics: R-squared, MAE, RMSE</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Videos</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w4-v1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Linear Regression Clearly Explained</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; StatQuest &mdash; <a href="https://www.youtube.com/watch?v=nk2CQITm_eo" target="_blank">Watch</a> &mdash; 27 min</div>
+        <div class="resource-note">The definitive StatQuest video on linear regression. Covers the math intuitively with no heavy algebra required.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w4-v2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Multiple Regression Clearly Explained</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; StatQuest &mdash; <a href="https://www.youtube.com/watch?v=EkAQAi3a4js" target="_blank">Watch</a> &mdash; 9 min</div>
+        <div class="resource-note">Extends the single variable regression to multiple predictors. Directly relevant to the streaming viewership and booking cancellation projects.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w4-v3">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">R-Squared and Adjusted R-Squared Explained</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; StatQuest &mdash; <a href="https://www.youtube.com/watch?v=2AQKmw14mHM" target="_blank">Watch</a> &mdash; 11 min</div>
+        <div class="resource-note">Critical for evaluating how good your regression model actually is.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w4-v4">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Gradient Descent, Step by Step</span>
+          <span class="tag tag-video">Video</span>
+        </div>
+        <div class="resource-meta">YouTube &mdash; StatQuest &mdash; <a href="https://www.youtube.com/watch?v=sDv4f4s2SB8" target="_blank">Watch</a> &mdash; 24 min</div>
+        <div class="resource-note">Gradient descent is the optimization algorithm behind most ML training. Understanding it conceptually is essential before Phase 2 (LLMs).</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Hands-On Tool (KNIME)</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w4-k1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">KNIME Regression Workflow Tutorial</span>
+          <span class="tag tag-tool">Tool</span>
+        </div>
+        <div class="resource-meta">KNIME Hub &mdash; <a href="https://hub.knime.com/search?q=regression" target="_blank">Browse Workflows</a></div>
+        <div class="resource-note">Search "regression" on KNIME Hub and download the Linear Regression Example workflow. Open it in KNIME, run it, modify the target variable, and observe how the metrics change.</div>
+      </div>
+    </div>
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w4-k2">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Case Study Dataset: Streaming Viewership Analysis</span>
+          <span class="tag tag-dataset">Dataset</span>
+        </div>
+        <div class="resource-meta">Use the Media & Entertainment dataset from the brochure. Proxy: <a href="https://www.kaggle.com/datasets/arnavsmayan/netflix-userbase-dataset" target="_blank">Netflix Dataset on Kaggle</a></div>
+        <div class="resource-note">Apply linear regression to predict viewership or engagement. Match the Media & Entertainment case study from the brochure.</div>
+      </div>
+    </div>
+  </div>
+  <div class="section-title">Reading</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <input type="checkbox" class="resource-checkbox" data-id="w4-r1">
+      <div class="resource-body">
+        <div class="resource-title-row">
+          <span class="resource-title">Interpreting Linear Regression Coefficients (Plain English)</span>
+          <span class="tag tag-reading">Reading</span>
+        </div>
+        <div class="resource-meta">Free Article &mdash; Towards Data Science &mdash; <a href="https://towardsdatascience.com/interpreting-coefficients-in-linear-regression-models-part-1-9f7ffe34ee66" target="_blank">Read Free</a></div>
+        <div class="resource-note">Bridges theory and business communication. After reading, you should be able to explain regression results to a non-technical stakeholder.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-nav">
+    <a class="btn btn-ghost" href="w3.html">&larr; Week 3</a>
+    <a class="btn btn-primary" href="w5.html">Week 5: Classification &rarr;</a>
+  </div>
+</div>
+<script src="../js/progress.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCheckboxes('w4'));</script>
+</body>
+</html>
