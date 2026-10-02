@@ -212,14 +212,14 @@ week_page('w8.html','w8','Week 8','Computer Vision, Model Comparison &amp; n8n A
 week_page('w9.html','w9','Week 9','RAG Foundations: Embeddings, Chunking &amp; Vector Stores','Nov 28 &mdash; Dec 4, 2026',
 'Build Retrieval-Augmented Generation (RAG) pipelines that connect LLMs to external knowledge sources for grounded, reliable outputs. Understand embeddings, chunking strategies, and vector databases. Automate outputs with n8n.',
 8,
-['Explain what an embedding is and why it enables semantic search','Choose the right chunking strategy for different document types','Set up a working RAG pipeline in Flowise with a free vector database','Connect the RAG output to n8n to trigger automated actions','Understand the difference between keyword search and semantic search'],
+['Explain what an embedding is and why it enables semantic search','Choose the right chunking strategy for different document types','Set up a working RAG pipeline in Dify with a free vector database','Connect the RAG output to n8n to trigger automated actions','Understand the difference between keyword search and semantic search'],
 [
   {'title':'Courses (Free)','items':[
     {'id':'w9-c1','title':'Building and Evaluating Advanced RAG','tag':'course','meta':'Free &mdash; DeepLearning.AI &mdash; <a href="https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/" target="_blank">Enroll Free</a> &mdash; ~1.5 hrs','note':'The best structured introduction to RAG available for free. Covers sentence window retrieval, auto-merging retrieval, and RAG triad evaluation. Complete all lessons this week.'},
     {'id':'w9-c2','title':'Vector Databases: From Embeddings to Applications','tag':'course','meta':'Free &mdash; DeepLearning.AI &mdash; <a href="https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/" target="_blank">Enroll Free</a> &mdash; ~1 hr','note':'Covers how vector databases store and retrieve embeddings. Directly needed to understand the storage layer of your RAG pipeline.'},
   ]},
   {'title':'Hands-On Tools','items':[
-    {'id':'w9-t1','title':'Flowise: Build Your First RAG Pipeline','tag':'tool','meta':'Free &mdash; <a href="https://flowiseai.com" target="_blank">flowiseai.com</a> &mdash; Tutorial: <a href="https://docs.flowiseai.com/getting-started" target="_blank">Getting Started Guide</a>','note':'Build a document Q&A chatbot in Flowise: upload a PDF, embed it with a free embedding model, store in a local vector store, and query it with a Groq LLM. No code needed.'},
+    {'id':'w9-t1','title':'Dify: Build Your First RAG Pipeline','tag':'tool','meta':'Free &mdash; <a href="https://dify.ai" target="_blank">flowiseai.com</a> &mdash; Tutorial: <a href="https://docs.dify.ai/getting-started" target="_blank">Getting Started Guide</a>','note':'Build a document Q&A chatbot in Dify: upload a PDF, embed it with a free embedding model, store in a local vector store, and query it with a Groq LLM. No code needed.'},
     {'id':'w9-t2','title':'Case Study Dataset: Public Company Annual Report (PDF)','tag':'dataset','meta':'Free &mdash; SEC EDGAR &mdash; <a href="https://www.annualreports.com" target="_blank">Download Any 10-K Report</a>','note':'This is your Financial Report Analyzer project data source. Download any company\'s annual 10-K report as a PDF. The RAG pipeline you build here will be the Week 11 project.'},
   ]},
   {'title':'Reading &amp; Papers','items':[
@@ -233,7 +233,7 @@ week_page('w9.html','w9','Week 9','RAG Foundations: Embeddings, Chunking &amp; V
 week_page('w10.html','w10','Week 10','RAG Evaluation, Citation Tracing &amp; Security','Dec 5 &mdash; Dec 11, 2026',
 'Evaluate RAG pipeline quality systematically using LLM-as-a-judge, hallucination detection, and consistency checks. Implement source citation so the system shows users exactly which document it pulled from. Understand RAG security risks.',
 7,
-['Evaluate a RAG pipeline using the RAG Triad: Context Relevance, Groundedness, Answer Relevance','Implement citation and source-page tracing in Flowise','Detect hallucinations using consistency checking techniques','Understand prompt injection risks in RAG systems','Optimize prompts for better retrieval accuracy'],
+['Evaluate a RAG pipeline using the RAG Triad: Context Relevance, Groundedness, Answer Relevance','Implement citation and source-page tracing in Dify','Detect hallucinations using consistency checking techniques','Understand prompt injection risks in RAG systems','Optimize prompts for better retrieval accuracy'],
 [
   {'title':'Courses (Free)','items':[
     {'id':'w10-c1','title':'Evaluating and Debugging Generative AI (Complete)','tag':'course','meta':'Free &mdash; DeepLearning.AI &mdash; <a href="https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/" target="_blank">Enroll Free</a> &mdash; ~1 hr','note':'Complete any remaining lessons from Week 6. Focus on the evaluation sections: tracing, evaluation metrics, and debugging.'},
@@ -244,8 +244,8 @@ week_page('w10.html','w10','Week 10','RAG Evaluation, Citation Tracing &amp; Sec
     {'id':'w10-r3','title':'Building Trustworthy AI: Source Attribution in RAG','tag':'reading','meta':'Free Article &mdash; LangChain Blog &mdash; <a href="https://blog.langchain.dev/semi-structured-multi-modal-rag/" target="_blank">Read Free</a>','note':'Practical techniques for making your RAG system show users which specific chunk and page it retrieved from. This is what transforms a demo into a trustworthy business tool.'},
   ]},
   {'title':'Hands-On Exercise','items':[
-    {'id':'w10-e1','title':'Evaluate Your Week 9 RAG Pipeline with RAGAS Metrics','tag':'tool','meta':'Use Flowise evaluation + RAGAS &mdash; <a href="https://docs.flowiseai.com/using-flowise/evaluations" target="_blank">Flowise Evaluation Docs</a>','note':'Run your Week 9 Financial Report RAG pipeline through a set of 10 test questions. Score it on faithfulness and relevance. Document what breaks and why. This feeds directly into the Week 11 project.'},
-    {'id':'w10-e2','title':'Add Citation Tracing to Your Flowise RAG Pipeline','tag':'tool','meta':'Flowise Docs &mdash; <a href="https://docs.flowiseai.com" target="_blank">docs.flowiseai.com</a>','note':'Configure Flowise to return the source document name and page number alongside every answer. Test that citations are accurate.'},
+    {'id':'w10-e1','title':'Evaluate Your Week 9 RAG Pipeline with RAGAS Metrics','tag':'tool','meta':'Use Dify evaluation + RAGAS &mdash; <a href="https://docs.dify.ai/guides/monitoring" target="_blank">Dify Evaluation Docs</a>','note':'Run your Week 9 Financial Report RAG pipeline through a set of 10 test questions. Score it on faithfulness and relevance. Document what breaks and why. This feeds directly into the Week 11 project.'},
+    {'id':'w10-e2','title':'Add Citation Tracing to Your Dify RAG Pipeline','tag':'tool','meta':'Dify Docs &mdash; <a href="https://docs.dify.ai" target="_blank">docs.flowiseai.com</a>','note':'Configure Dify to return the source document name and page number alongside every answer. Test that citations are accurate.'},
   ]},
 ],'w9.html','Week 9','w11.html','Week 11: Project')
 
@@ -257,7 +257,7 @@ week_page('w11.html','w11','Week 11','Project: Financial Report Analyzer','Dec 1
 [
   {'title':'Project Resources','items':[
     {'id':'w11-p1','title':'SEC EDGAR: Download Annual Report (10-K)','tag':'dataset','meta':'Free &mdash; <a href="https://www.annualreports.com" target="_blank">Browse Reports</a>','note':'Choose any well-known company (Apple, Tesla, Microsoft). Download their most recent 10-K annual report as a PDF. This is your RAG document.'},
-    {'id':'w11-p2','title':'Flowise: Complete RAG Pipeline Setup','tag':'tool','meta':'<a href="https://flowiseai.com" target="_blank">flowiseai.com</a> &mdash; <a href="https://docs.flowiseai.com" target="_blank">Documentation</a>','note':'Build the full pipeline: PDF loader → text splitter → embedding model (free) → vector store → LLM (Groq free) → chat interface with citations.'},
+    {'id':'w11-p2','title':'Dify: Complete RAG Pipeline Setup','tag':'tool','meta':'<a href="https://dify.ai" target="_blank">flowiseai.com</a> &mdash; <a href="https://docs.dify.ai" target="_blank">Documentation</a>','note':'Build the full pipeline: PDF loader → text splitter → embedding model (free) → vector store → LLM (Groq free) → chat interface with citations.'},
     {'id':'w11-p3','title':'Project Test Questions (Business Analyst Perspective)','tag':'reading','meta':'Create your own 15 test questions','note':'Write 15 questions a financial analyst would ask: revenue growth, key risks, segment performance, management outlook, capital allocation. Test every one and document accuracy.'},
   ]},
   {'title':'Documentation Template','items':[
@@ -270,7 +270,7 @@ week_page('w11.html','w11','Week 11','Project: Financial Report Analyzer','Dec 1
 week_page('w12.html','w12','Week 12','Single &amp; Multi-Agent Systems: Design, Memory &amp; Orchestration','Dec 19 &mdash; Dec 25, 2026',
 'Design and deploy AI agents that can plan, remember, use tools, and complete multi-step business tasks autonomously. Extend to multi-agent systems where agents collaborate, hand off tasks, and handle real-world complexity.',
 8,
-['Explain the agent loop: perceive, think, act, observe','Configure memory, tools, and planning in a single Flowise agent','Design a multi-agent system with a supervisor and worker agents','Implement tool accuracy evaluation for agent outputs','Apply guardrails to prevent agents from taking harmful or incorrect actions'],
+['Explain the agent loop: perceive, think, act, observe','Configure memory, tools, and planning in a single Dify agent','Design a multi-agent system with a supervisor and worker agents','Implement tool accuracy evaluation for agent outputs','Apply guardrails to prevent agents from taking harmful or incorrect actions'],
 [
   {'title':'Courses (Free)','items':[
     {'id':'w12-c1','title':'AI Agents in LangGraph','tag':'course','meta':'Free &mdash; DeepLearning.AI &mdash; <a href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank">Enroll Free</a> &mdash; ~2 hrs','note':'The best free course on building single and multi-agent systems. Covers state machines, memory, tool use, and human-in-the-loop. Complete all lessons.'},
@@ -282,8 +282,8 @@ week_page('w12.html','w12','Week 12','Single &amp; Multi-Agent Systems: Design, 
     {'id':'w12-r3','title':'LLM Powered Autonomous Agents (Blog Post)','tag':'reading','meta':'Free &mdash; Lilian Weng / OpenAI &mdash; <a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank">Read Free</a>','note':'The most comprehensive overview of LLM agent architectures. Covers planning, memory types (sensory, short-term, long-term), and tool use. Bookmark and reference throughout.'},
   ]},
   {'title':'Hands-On Tools','items':[
-    {'id':'w12-t1','title':'Build a Single Agent in Flowise','tag':'tool','meta':'Flowise Agent Docs &mdash; <a href="https://docs.flowiseai.com/using-flowise/agentflows" target="_blank">Agent Flow Docs</a>','note':'Build a single agent with: (1) a tool for searching the web, (2) a tool for reading a document, and (3) memory to remember conversation context. Test it with a multi-step research task.'},
-    {'id':'w12-t2','title':'Build a Multi-Agent Supervisor System in Flowise','tag':'tool','meta':'Flowise Multi-Agent Docs &mdash; <a href="https://docs.flowiseai.com" target="_blank">docs.flowiseai.com</a>','note':'Extend your single agent into a supervisor + 2 worker agents. The supervisor routes tasks; one worker searches knowledge, another drafts responses. This is the scaffold for the Week 13 project.'},
+    {'id':'w12-t1','title':'Build a Single Agent in Dify','tag':'tool','meta':'Dify Agent Docs &mdash; <a href="https://docs.dify.ai/guides/workflow" target="_blank">Agent Flow Docs</a>','note':'Build a single agent with: (1) a tool for searching the web, (2) a tool for reading a document, and (3) memory to remember conversation context. Test it with a multi-step research task.'},
+    {'id':'w12-t2','title':'Build a Multi-Agent Supervisor System in Dify','tag':'tool','meta':'Dify Multi-Agent Docs &mdash; <a href="https://docs.dify.ai" target="_blank">docs.flowiseai.com</a>','note':'Extend your single agent into a supervisor + 2 worker agents. The supervisor routes tasks; one worker searches knowledge, another drafts responses. This is the scaffold for the Week 13 project.'},
   ]},
 ],'w11.html','Week 11','w13.html','Week 13: Final Project')
 
@@ -291,17 +291,17 @@ week_page('w12.html','w12','Week 12','Single &amp; Multi-Agent Systems: Design, 
 week_page('w13.html','w13','Week 13','Project: Agentic Helpdesk + Portfolio Wrap-Up','Dec 26 &mdash; Dec 31, 2026',
 'Build the Agentic Customer Support Helpdesk capstone: a multi-agent system that classifies tickets, retrieves knowledge, generates policy-compliant responses, and handles escalation. Then wrap up your portfolio with all three projects documented.',
 6,
-['Deploy a working multi-agent agentic helpdesk system in Flowise','Implement ticket classification, RAG knowledge retrieval, and escalation routing','Evaluate agent output quality with tool accuracy metrics','Write up all three projects as business-readable case studies','Publish your portfolio to GitHub Pages or Notion'],
+['Deploy a working multi-agent agentic helpdesk system in Dify','Implement ticket classification, RAG knowledge retrieval, and escalation routing','Evaluate agent output quality with tool accuracy metrics','Write up all three projects as business-readable case studies','Publish your portfolio to GitHub Pages or Notion'],
 [
   {'title':'Project Resources','items':[
-    {'id':'w13-p1','title':'Flowise Multi-Agent Helpdesk Setup','tag':'tool','meta':'Flowise Docs &mdash; <a href="https://docs.flowiseai.com/using-flowise/agentflows" target="_blank">Agent Flow Guide</a>','note':'Build the 3-agent system: (1) Classifier Agent: categorizes incoming support tickets, (2) Knowledge Agent: searches a RAG knowledge base for relevant policies, (3) Responder Agent: drafts final response or escalates.'},
+    {'id':'w13-p1','title':'Dify Multi-Agent Helpdesk Setup','tag':'tool','meta':'Dify Docs &mdash; <a href="https://docs.dify.ai/guides/workflow" target="_blank">Agent Flow Guide</a>','note':'Build the 3-agent system: (1) Classifier Agent: categorizes incoming support tickets, (2) Knowledge Agent: searches a RAG knowledge base for relevant policies, (3) Responder Agent: drafts final response or escalates.'},
     {'id':'w13-p2','title':'Sample Customer Support Dataset','tag':'dataset','meta':'Free &mdash; Kaggle &mdash; <a href="https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter" target="_blank">Download Dataset</a>','note':'Customer support conversations to test your agent system against real ticket scenarios.'},
-    {'id':'w13-p3','title':'n8n: Automate Ticket Ingestion','tag':'tool','meta':'n8n Desktop App &mdash; <a href="https://docs.n8n.io" target="_blank">n8n Docs</a>','note':'Set up an n8n workflow that monitors a Gmail inbox (or webhook) for new support requests, sends them to your Flowise agent, and logs the response. This makes the whole system end-to-end.'},
+    {'id':'w13-p3','title':'n8n: Automate Ticket Ingestion','tag':'tool','meta':'n8n Desktop App &mdash; <a href="https://docs.n8n.io" target="_blank">n8n Docs</a>','note':'Set up an n8n workflow that monitors a Gmail inbox (or webhook) for new support requests, sends them to your Dify agent, and logs the response. This makes the whole system end-to-end.'},
   ]},
   {'title':'Portfolio Wrap-Up (Bonus C)','items':[
     {'id':'w13-b1','title':'Portfolio Template: Project Case Study Format','tag':'reading','meta':'Use Notion Free or Google Docs &mdash; <a href="https://notion.so" target="_blank">notion.so</a>','note':'For each of the 3 projects write: (1) Problem Statement (1 sentence), (2) Business Impact (what decision does this enable?), (3) Architecture (your Excalidraw diagram), (4) Tools Used, (5) Results, (6) Limitations. Frame everything in business value, not technical jargon.'},
     {'id':'w13-b2','title':'Host Portfolio on GitHub Pages or Notion','tag':'tool','meta':'GitHub Pages: <a href="https://pages.github.com" target="_blank">pages.github.com</a> &mdash; or Notion Public Page: free','note':'Publish your three project write-ups publicly so you can share the URL. A public portfolio link is your proof of work for any employer, client, or collaborator.'},
-    {'id':'w13-b3','title':'LinkedIn: Update Your Skills Section','tag':'reading','meta':'<a href="https://linkedin.com" target="_blank">linkedin.com</a>','note':'Add these skills: Machine Learning, Prompt Engineering, Retrieval-Augmented Generation, AI Agents, KNIME, n8n, Flowise. Add a post announcing your completion of the program with your portfolio link.'},
+    {'id':'w13-b3','title':'LinkedIn: Update Your Skills Section','tag':'reading','meta':'<a href="https://linkedin.com" target="_blank">linkedin.com</a>','note':'Add these skills: Machine Learning, Prompt Engineering, Retrieval-Augmented Generation, AI Agents, KNIME, n8n, Dify. Add a post announcing your completion of the program with your portfolio link.'},
   ]},
 ],'w12.html','Week 12','../index.html','Back to Dashboard')
 
