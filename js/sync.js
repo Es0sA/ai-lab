@@ -27,7 +27,10 @@ async function pullFromCloud() {
         'Authorization': `Bearer ${SUPABASE_KEY}`
       }
     });
-    if (!res.ok) return;
+    if (!res.ok) {
+      updateSyncBadge('Sync Error', 'var(--red)');
+      return;
+    }
     const rows = await res.json();
     if (rows && rows.length > 0 && rows[0].data) {
       const remote = rows[0].data;
@@ -40,9 +43,9 @@ async function pullFromCloud() {
           merged[w][k] = v || (merged[w][k] || false);
         }
       }
-      saveProgress(merged);
-      updateSyncBadge('Synced', 'var(--green)');
+      _originalSave(merged);
     }
+    updateSyncBadge('Synced', 'var(--green)');
   } catch (err) {
     console.warn('Sync pull error:', err);
     updateSyncBadge('Offline', 'var(--yellow)');
