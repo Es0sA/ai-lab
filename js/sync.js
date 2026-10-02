@@ -355,3 +355,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 });
+
+/* ---------- Expose functions globally for sync.html ---------- */
+window.connectGist    = connectGist;
+window.pushToGist     = pushToGist;
+window.pullFromGist   = pullFromGist;
+window.disconnectGist = disconnectGist;
+window.isConnected    = isConnected;
+window.getGistId      = getGistId;
+window.GIST_SYNC_KEY  = GIST_SYNC_KEY;
+window.GIST_ID_KEY    = GIST_ID_KEY;
