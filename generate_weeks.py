@@ -219,7 +219,7 @@ week_page('w9.html','w9','Week 9','RAG Foundations: Embeddings, Chunking &amp; V
     {'id':'w9-c2','title':'Vector Databases: From Embeddings to Applications','tag':'course','meta':'Free &mdash; DeepLearning.AI &mdash; <a href="https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/" target="_blank">Enroll Free</a> &mdash; ~1 hr','note':'Covers how vector databases store and retrieve embeddings. Directly needed to understand the storage layer of your RAG pipeline.'},
   ]},
   {'title':'Hands-On Tools','items':[
-    {'id':'w9-t1','title':'Dify: Build Your First RAG Pipeline','tag':'tool','meta':'Free &mdash; <a href="https://dify.ai" target="_blank">flowiseai.com</a> &mdash; Tutorial: <a href="https://docs.dify.ai/getting-started" target="_blank">Getting Started Guide</a>','note':'Build a document Q&A chatbot in Dify: upload a PDF, embed it with a free embedding model, store in a local vector store, and query it with a Groq LLM. No code needed.'},
+    {'id':'w9-t1','title':'Dify: Build Your First RAG Pipeline','tag':'tool','meta':'Free &mdash; <a href="https://dify.ai" target="_blank">dify.ai</a> &mdash; Tutorial: <a href="https://docs.dify.ai/getting-started" target="_blank">Getting Started Guide</a>','note':'Build a document Q&A chatbot in Dify: upload a PDF, embed it with a free embedding model, store in a local vector store, and query it with a Groq LLM. No code needed.'},
     {'id':'w9-t2','title':'Case Study Dataset: Public Company Annual Report (PDF)','tag':'dataset','meta':'Free &mdash; SEC EDGAR &mdash; <a href="https://www.annualreports.com" target="_blank">Download Any 10-K Report</a>','note':'This is your Financial Report Analyzer project data source. Download any company\'s annual 10-K report as a PDF. The RAG pipeline you build here will be the Week 11 project.'},
   ]},
   {'title':'Reading &amp; Papers','items':[
@@ -245,7 +245,7 @@ week_page('w10.html','w10','Week 10','RAG Evaluation, Citation Tracing &amp; Sec
   ]},
   {'title':'Hands-On Exercise','items':[
     {'id':'w10-e1','title':'Evaluate Your Week 9 RAG Pipeline with RAGAS Metrics','tag':'tool','meta':'Use Dify evaluation + RAGAS &mdash; <a href="https://docs.dify.ai/guides/monitoring" target="_blank">Dify Evaluation Docs</a>','note':'Run your Week 9 Financial Report RAG pipeline through a set of 10 test questions. Score it on faithfulness and relevance. Document what breaks and why. This feeds directly into the Week 11 project.'},
-    {'id':'w10-e2','title':'Add Citation Tracing to Your Dify RAG Pipeline','tag':'tool','meta':'Dify Docs &mdash; <a href="https://docs.dify.ai" target="_blank">docs.flowiseai.com</a>','note':'Configure Dify to return the source document name and page number alongside every answer. Test that citations are accurate.'},
+    {'id':'w10-e2','title':'Add Citation Tracing to Your Dify RAG Pipeline','tag':'tool','meta':'Dify Docs &mdash; <a href="https://docs.dify.ai" target="_blank">docs.dify.ai</a>','note':'Configure Dify to return the source document name and page number alongside every answer. Test that citations are accurate.'},
   ]},
 ],'w9.html','Week 9','w11.html','Week 11: Project')
 
@@ -257,7 +257,7 @@ week_page('w11.html','w11','Week 11','Project: Financial Report Analyzer','Dec 1
 [
   {'title':'Project Resources','items':[
     {'id':'w11-p1','title':'SEC EDGAR: Download Annual Report (10-K)','tag':'dataset','meta':'Free &mdash; <a href="https://www.annualreports.com" target="_blank">Browse Reports</a>','note':'Choose any well-known company (Apple, Tesla, Microsoft). Download their most recent 10-K annual report as a PDF. This is your RAG document.'},
-    {'id':'w11-p2','title':'Dify: Complete RAG Pipeline Setup','tag':'tool','meta':'<a href="https://dify.ai" target="_blank">flowiseai.com</a> &mdash; <a href="https://docs.dify.ai" target="_blank">Documentation</a>','note':'Build the full pipeline: PDF loader → text splitter → embedding model (free) → vector store → LLM (Groq free) → chat interface with citations.'},
+    {'id':'w11-p2','title':'Dify: Complete RAG Pipeline Setup','tag':'tool','meta':'<a href="https://dify.ai" target="_blank">dify.ai</a> &mdash; <a href="https://docs.dify.ai" target="_blank">Documentation</a>','note':'Build the full pipeline: PDF loader → text splitter → embedding model (free) → vector store → LLM (Groq free) → chat interface with citations.'},
     {'id':'w11-p3','title':'Project Test Questions (Business Analyst Perspective)','tag':'reading','meta':'Create your own 15 test questions','note':'Write 15 questions a financial analyst would ask: revenue growth, key risks, segment performance, management outlook, capital allocation. Test every one and document accuracy.'},
   ]},
   {'title':'Documentation Template','items':[
@@ -283,7 +283,7 @@ week_page('w12.html','w12','Week 12','Single &amp; Multi-Agent Systems: Design, 
   ]},
   {'title':'Hands-On Tools','items':[
     {'id':'w12-t1','title':'Build a Single Agent in Dify','tag':'tool','meta':'Dify Agent Docs &mdash; <a href="https://docs.dify.ai/guides/workflow" target="_blank">Agent Flow Docs</a>','note':'Build a single agent with: (1) a tool for searching the web, (2) a tool for reading a document, and (3) memory to remember conversation context. Test it with a multi-step research task.'},
-    {'id':'w12-t2','title':'Build a Multi-Agent Supervisor System in Dify','tag':'tool','meta':'Dify Multi-Agent Docs &mdash; <a href="https://docs.dify.ai" target="_blank">docs.flowiseai.com</a>','note':'Extend your single agent into a supervisor + 2 worker agents. The supervisor routes tasks; one worker searches knowledge, another drafts responses. This is the scaffold for the Week 13 project.'},
+    {'id':'w12-t2','title':'Build a Multi-Agent Supervisor System in Dify','tag':'tool','meta':'Dify Multi-Agent Docs &mdash; <a href="https://docs.dify.ai" target="_blank">docs.dify.ai</a>','note':'Extend your single agent into a supervisor + 2 worker agents. The supervisor routes tasks; one worker searches knowledge, another drafts responses. This is the scaffold for the Week 13 project.'},
   ]},
 ],'w11.html','Week 11','w13.html','Week 13: Final Project')
 
